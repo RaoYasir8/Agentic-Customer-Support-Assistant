@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Customer Support Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="app">
+        <section class="support-card">
+            
+            <header class="support-header">
+                <div>
+                    <h1>Customer Support Assistant</h1>
+                    <p>LangChain Agent + Tools + Memory + Groq</p>
+                </div>
+                <span class="status">Online</span>
+            </header>
+
+            <div id="chatBox" class="chat-box">
+                <div class="message bot-message">
+                    Hi! I am your AI customer support assistant. 
+                    You can ask about orders, refunds, shipping, warranty, products, 
+                    or create a support ticket.
+                </div>
+            </div>
+
+            <form id="chatForm" class="chat-form">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Example: Check status for ORD-1001"
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit">Send</button>
+            </form>
+
+            <button id="clearBtn" class="clear-btn">
+                Clear Conversation
+            </button>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
